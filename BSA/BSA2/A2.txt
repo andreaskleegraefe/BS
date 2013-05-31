@@ -32,6 +32,24 @@ Theoriefragen (4 Punkte)
            auftreten, da die Threads mit vielen E/A Stoessen auf die
 	   bearbeitung des Threads mit langen CPU-Stoessen warten muessen.
 
-	3. Folgende Prozesse erreichen
+	3. Folgende Prozesse erreichen die CPU-Warteschlange in dieser 
+	   Reihenfolge: A mit Bedienzeit 10ms, B mit Bedienzeit 11ms,
+	   C mit Bedienzeit 1ms, D mit Bedienzeit 7ms und E mit Bedienzeit
+	   3ms. Der Prozesswechsel dauert genau 0ms und ist somit 
+	   zu vernachlaessigen. Es gibt keine I/O-Bursts. Berechnet das
+	   Round-Robin-Scheduling. Die Zeitscheibe betraegt t(quantum)=4ms.
+	   Gebt dazu den Startzeitpunkt sowie die Durchlaufzeit der Prozesse an.
+	#  A=10ms B=11ms C=1ms D=7ms E=3ms quant=4ms
+	# ______________________________________
+	  | A | B |C| D | E | A | B | D | A| B |
+	  0   4   8 9  13  16  20  24  27 29  32
 	
+	#  Start A=0ms, Ziel A=29ms
+	   Start B=4ms, Ziel B=32ms
+	   Start C=8ms, Ziel C=9ms
+	   Start D=9ms, Ziel D=27ms
+	   Start E=13ms, Ziel E=16ms
+
+Programmierung: Filmclub (6 Punkte)
+
 
