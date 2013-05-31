@@ -1,0 +1,37 @@
+Aufgabe 2: Threadsynchronisation (10 Punkte)
+
+Theoriefragen (4 Punkte)
+	
+	1. Erlaeutere den Unterschied zwischen aktivem und passivem Warten.
+	#  Aktives Warten (polling) ist ein Vorgang der auf das eintreffen eines 
+	   Zustandes wartet, kann permanent nachfragen ob dieser 
+	   bereits eingetreten ist.
+	#  Passives Warten ist ein Vorgang der ebenfalls auf das 
+	   eintreten eines Zustandes wartet, allerdings kann dieser
+	   "schlafen" bis er eine Nachricht erhaelt.
+	#  Somit liegt der Unterschied darin das beim aktivem Warten 
+	   stetig gefragt wird ob der Zustand bereits eingetroffen ist.
+	   Im Gegensatz hierzu schlaeft der Prozess beim passivem 
+	   Warten, bis er benachtichtigt wird, wodurch dieser weniger 
+	   Aufwand verursacht.
+
+	2. Was ist der Konvoi-Effekt? Bei welchen CPU-Zuteilungsstrategien
+	   kann dieser auftreten? Nennt ein Beispiel und erlaeutert warum 
+	   bei der von euch angegebenen Strategie der Konvoi-Effekt auftritt.
+	#  Der Konvoi-Effekt tritt auf wenn viele Threads nacheinander vom 
+	   Prozessor verarbeitet werden und die Eigenschaft mehrere Threads
+	   gleichzeitig abzuarbeiten nicht genutzt wird wodurch die CPU 
+	   stark beansprucht, allerdings das Gesamtesystem nur gering
+	   beansprucht wird.
+	#  Wuerde man nun die First-Come First-Served (FCFS) waehlen, wuerde
+	   dies, bezueglich Ressourcen, wie E/A (Ein-/Ausgabe) welche lange 
+	   brauchen um angefordert zu werden, viel Potenzial verschwenden.
+	#  Wuerde man nun also z.B. zuerst einen Thread mit langen CPU-Stoss
+	   waehlen und darauf viele Threads mit vielen E/A-Stoessen waehlen,
+	   so wuerde hier bei einer FCFS-Strategie der Konvoi-Effekt
+           auftreten, da die Threads mit vielen E/A Stoessen auf die
+	   bearbeitung des Threads mit langen CPU-Stoessen warten muessen.
+
+	3. Folgende Prozesse erreichen
+	
+
