@@ -52,4 +52,24 @@ Theoriefragen (4 Punkte)
 
 Programmierung: Filmclub (6 Punkte)
 
+Problem:Ein Konto soll zur Verwaltung von Guthaben erstellt werden.
+Es soll einen Gesamtbetrag speichern und es soll moeglich sein
+auf diesen Betraege zu addieren (einzahlen) bzw. zu subtrahieren (auszahlen)
+um somit den Kontostand zu ueberwachen.
+
+Eingabe:Film -200$, Getraenke -400$, Speisen -400$, Einzahlung +2000$, Start +1000$. 
+
+Ausgabe:Endkontostand nachdem alle Funktionen abgearbeitet wurden
+
+Einfacher Ansatz fuer den Algorithmus:
+Es muss eine Variable angelegt werden welche das gesamte Guthaben speichert,
+ausserdem muessen 2 Fkt. angelegt werden welche das ein- und auszahlen 
+ermoeglichen.
+
+filmclub_a.c
+
+main()
+
+	
+
 
